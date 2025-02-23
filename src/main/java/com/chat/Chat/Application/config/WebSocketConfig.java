@@ -1,3 +1,4 @@
+
 package com.chat.Chat.Application.config;
 
 import org.springframework.context.annotation.Configuration;
@@ -13,7 +14,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
         registry.addEndpoint("/chat")
-                .setAllowedOrigins("http://localhost:8080")
+                .setAllowedOrigins("http://localhost:9090")
                 .withSockJS();
     }
 
